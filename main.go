@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strconv"
 )
 
 var i float64
@@ -15,7 +16,7 @@ func main() {
 		cinco = math.Mod(i, 5)
 
 		if tres != 0 && cinco != 0 {
-			fmt.Sprintln(i)
+			fmt.Println(strconv.FormatFloat(i, 'E', 1, 2))
 		} else if tres == 0 && cinco != 0 {
 			fmt.Println("Fizz")
 		} else if tres != 0 && cinco == 0 {
