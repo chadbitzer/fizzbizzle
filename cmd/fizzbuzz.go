@@ -11,7 +11,7 @@ var tres float64
 var cinco float64
 
 func main() {
-	for i = 0; i <= 100; i++ {
+	for i = 1; i <= 100; i++ {
 		tres = math.Mod(i, 3)
 		cinco = math.Mod(i, 5)
 
